@@ -1,6 +1,6 @@
 package challenge;
 
-public class Place implements Comparable<Place> {
+public class Place {
     private String name;
     private int distance;
 
@@ -21,11 +21,5 @@ public class Place implements Comparable<Place> {
     public String toString() {
         return name + " (" + distance + " km)";
     }
-
-    @Override
-    public int compareTo(Place other) {
-        return Integer.compare(this.distance, other.distance);
-    }
-
 
 }

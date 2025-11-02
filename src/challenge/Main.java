@@ -25,7 +25,7 @@ public class Main {
         ListIterator<Place> iterator = places.listIterator();
         while (iterator.hasNext()) {
             Place current = iterator.next();
-            if (current.compareTo(place) > 0) {
+            if (current.getDistance()-place.getDistance()> 0) {
                 iterator.previous();
                 iterator.add(place);
                 return;
