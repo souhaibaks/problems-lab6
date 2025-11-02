@@ -27,20 +27,5 @@ public class Place implements Comparable<Place> {
         return Integer.compare(this.distance, other.distance);
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-        Place place = (Place) obj;
-        return name.equalsIgnoreCase(place.name);
-    }
 
-    @Override
-    public int hashCode() {
-        return name.toLowerCase().hashCode();
-    }
 }
